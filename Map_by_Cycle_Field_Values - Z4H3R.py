@@ -1,9 +1,9 @@
 import os
-field_name = 'Name' # - Name of the field you want to cycle.
-layoutName = "INV MAR - HS - DEC 2021 -  - A5 150DPI" # - Name of the Print Layout you want to use.
-png_path = r'C:\Users\Z4H3R\Desktop\TEST' # - Path where you want to save the .png files.
-png_name_template = "INV MAR - {} - A5 150DPI.png" # - Name of the .png file. Use "{}" where you want the field_value inserted in the file name.
-label_name = layout.itemById("field_value") # - ID of the label in Print Layout you want to show the unique value beeing mapped. You must first set it in the Layout you want to use.
+field_name = 'your_field_name' # - Name of the field you want to cycle.
+layoutName = "your_print_layout_name" # - Name of the Print Layout you want to use.
+png_path = r'your_path' # - Path where you want to save the .png files.
+png_name_template = "your_file_name - {}.png" # - Name of the .png file. Use "{}" where you want the field_value inserted in the file name.
+label_name = layout.itemById("your_print_layout_ID") # - ID of the label in Print Layout you want to show the unique value beeing mapped. You must first set it in the Layout you want to use.
 project = QgsProject.instance()
 layer = iface.activeLayer()
 field_index = layer.fields().indexFromName(field_name)
